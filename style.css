@@ -298,13 +298,6 @@
     font-family: 'Segoe UI', Roboto, sans-serif;
   }
   
-  .social-share h3 {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    color: #333;
-    font-size: 1.2rem;
-    font-weight: 600;
-  }
   
   .social-share a {
     display: inline-block;
@@ -343,83 +336,107 @@
   .social-share a[title*="Discord"] {
     background-color: #5865f2;
   }
- .sec001 {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 30px;
-    background-color: #f8f8f8;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* General styling for the contact form section */
+.sec001 {
+  background-color: #f4f4f9;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Heading styling */
+.sec001 h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Styling for the form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Labels styling */
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Input and select field styling */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Focus effect on input and textarea fields */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Button styling */
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.form-group input:invalid,
+.form-group select:invalid,
+.form-group textarea:invalid {
+  /* border-color: #d4e209; */
+  border-color: orange;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .sec001 {
+    padding: 20px;
   }
-  
+
   .sec001 h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 1.5rem;
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: 10px;
   }
-  
-  label {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #555;
+
+  .submit-btn {
+    padding: 10px 15px;
   }
-  
-  input,
-  textarea {
-    padding: 12px;
-    margin-top: 6px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-  }
-  
-  input:focus,
-  textarea:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  button[type="submit"] {
-    margin-top: 25px;
-    padding: 12px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Responsive */
-  @media (max-width: 640px) {
-    .sec001 {
-      margin: 20px;
-      padding: 20px;
-    }
-  
-    .sec001 h2 {
-      font-size: 22px;
-    }
-  
-    input,
-    textarea {
-      font-size: 15px;
-    }
-  }
-  
+}
 
   /* ===== Footer ===== */
   footer {
